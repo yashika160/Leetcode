@@ -19,7 +19,7 @@ public:
         int left = 0;
         int right = n - 1;
 
-        while(left <= right) {
+        while(left < right) {
             while(left < right && !isAlphaNumeric(s[left])) {
                 left++;
                 continue;
