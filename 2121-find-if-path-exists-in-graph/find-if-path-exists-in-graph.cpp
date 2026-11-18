@@ -21,14 +21,14 @@ public:
         vector<vector<int>> adj = createGraph(n, edges);
         vector<bool> visited(n, false);
         queue<int> q;
-        vector<int> res;
+        //vector<int> res;
 
         q.push(source);
         visited[source] = true;
 
         while(!q.empty()) {
             int curr = q.front();
-            res.push_back(curr);
+            //res.push_back(curr);
             q.pop();
             for(int x : adj[curr]) {
                 if(!visited[x]) {
